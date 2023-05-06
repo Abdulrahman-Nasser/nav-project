@@ -1,0 +1,153 @@
+img {
+  width: 100%;
+}
+
+li {
+  list-style: none;
+  padding: 3px 0;
+}
+
+ul {
+  padding: 10px 10px;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: 'Assistant', sans-serif;
+
+}
+
+.bg {
+  background-color: #fafafa;
+}
+
+/*****************************/
+
+.header{
+  padding: 0 20px ;
+  box-shadow: 0 0 5px rgb(92, 90, 90);
+  background: linear-gradient(to left, #282c3f, #ee5f73);
+
+}
+
+.header .navbar .navbar-nav .nav-link {
+  color: white !important;
+}
+
+.main-link {
+  text-align: center;
+  text-decoration: none;
+  font-size: 14px;
+  letter-spacing: .3px;
+  color: #282c3f;
+  border-bottom: none;
+  -webkit-transition: left .2s ease-out, width .2s ease-out;
+  transition: left .2s ease-out, width .2s ease-out;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 0 10px;
+}
+
+.border1 {
+  position: relative;
+}
+
+.border1::after {
+  content: "";
+  width: 50px;
+  height: 3px;
+  position: absolute;
+  left: 0;
+  top: 55px;
+  z-index: 22;
+  background-color: #ee5f73;
+  transition: all .3s ease-out;
+  opacity: 0;
+}
+
+/* .border1:hover::after {
+  opacity: 1;
+} */
+
+.overlay-bg {
+  background-color: rgba(0, 0, 0, .3);
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 160px;
+  opacity: 0;
+  visibility: hidden;
+  transition: all .3s;
+  z-index: -100;
+}
+
+.overlay-1 {
+  position: absolute;
+  background-color: #FFFFFF;
+  box-shadow: inset 0 0 8px rgba(0, 0, 0, .1);
+  top: 0px;
+  left: 0;
+  right: 0;
+  width: 87%;
+  margin: auto;
+  transition: all .5s;
+  
+}
+
+.Top-wear {
+  color: #ee5f73;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.items:hover .overlay-1 {
+  opacity: 1;
+  visibility: visible;
+  top: 84px;
+  transition: all .3s;
+}
+
+.nav-overlay:hover .overlay-bg {
+  /* top: 82.5px; */
+  visibility: visible;
+  opacity: 1;
+  transition: all .3s;
+}
+
+.links {
+  color: #282c3f;
+  line-height: 23px !important;
+  font-weight: 400;
+  font-size: 15px;
+}
+
+.links:hover {
+  color: black;
+  font-weight: 700;
+}
+
+/*###########################*/
+/*#submenu */
+/*###########################*/
+
+
+.submenu {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.submenu-items {
+  box-shadow: 0 0 5px rgba(0, 0, 0, .7);
+  width: 100%;
+  position: absolute;
+  top: 78px;
+  visibility: visible;
+  transition: all .2s ease-in-out;
+  opacity: 1;
+}
